@@ -1,0 +1,50 @@
+A string S represents a list of words.
+Each letter in the word has 1 or more options.  If there is one option, the letter is represented as is.  
+If there is more than one option, then curly braces delimit the options.  For example, "{a,b,c}" represents options ["a", "b", "c"].
+For example, "{a,b,c}d{e,f}" represents the list ["ade", "adf", "bde", "bdf", "cde", "cdf"].
+Return all words that can be formed in this manner, in lexicographical order.
+
+Input Description:
+A string as expression.
+
+Output Description:
+Print all words that can be formed in this manner, in lexicographical order.
+
+Sample Input:
+abcd
+
+Sample Output:
+abcd
+
+Explanation:
+The words are arranged in lexicographical order.
+
+Sample Input:
+{a,b}c{d,e}f
+
+Sample Output:
+acdf acef bcdf bcef
+
+Sample Input:
+{x},e{y,z}
+
+Sample Output:
+x
+
+Sample Input:
+{x,y}o{n,m}
+
+Sample Output:
+xom xon yom yon
+
+Sample Input:
+hgdteui
+
+Sample Output:
+hgdteui
+
+Sample Input:
+{po,j}kj{u,i,o}p{w,e,r}
+
+Sample Output:
+jkjipe jkjipr jkjipw jkjope jkjopr jkjopw jkjupe jkjupr jkjupw pokjipe pokjipr pokjipw pokjope pokjopr pokjopw pokjupe pokjupr pokjupw
